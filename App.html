@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Web</title>
+</head>
+<body>
+    <section>
+        <a onclick="Registrate()" id="btn-Registro" class="btn-Registro">Registrate</a>
+        <a  id="btn-Inicio" onclick="InicioSesion()" class="btn-Inicio" >Iniciar Sesion</a>
+    </section>
+
+    <form action="" id="Register" class="Register card">
+        <h3>Registrate</h3>
+        <label for="">Usuario</label>
+        <br>
+        <input id="usuario" value="" placeholder="Usuario" type="text">
+        <br>
+        <label for="">Correo Electronico</label>
+        <br>
+        <input id="email" placeholder="usuario@usuario.com" type="email">
+        <br>
+        <label for="">Contraseña</label>
+        <br>
+        <input id="contraseña" placeholder="********" type="password" name="">
+        <br>
+        <a onclick="guardar()" class="btn">Registrar</a>
+    </form>
+    <form action="" id="Loggin" class="Loggin card">
+        <h3>Inicia sesion</h3>
+        <label  for="">Usuario</label>
+        <br>
+        <input id="IngresoUsuario" placeholder="Usuario" type="text">
+        <br>
+        <label  for="">Contraseña</label>
+        <br>
+        <input   placeholder="********" type="password" name="" id="IngresoContraseña">
+        <br>
+        <a class="btn" onclick="iniciar()">Iniciar</a>
+    </form>
+    <section id="user">
+        <a id="cerrarSesion" onclick="cerrar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path d="M7 12h14l-3 -3m0 6l3 -3" />
+              </svg>
+        </a>
+
+        <div>
+            <h1 id="user-nombre">Nombre</h1>
+        </div>
+    </section>
+    <script src="script/app.js"></script>
+</body>
+</html>

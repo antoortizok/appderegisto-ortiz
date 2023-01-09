@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #001233;
+}
+.card{
+    background-color:#002855;
+    color: white;
+    padding: 1em;
+    width: 200px;
+    height: 290px;
+    text-align: left;
+    box-shadow: 1px 1px 20px #001845;
+    border-radius: 20px;
+    margin: 2em;
+}
+input{
+    margin: 0.9em 0px;
+}
+.Loggin{
+    display: none;
+    height: 220px;
+}
+.Register{
+    display: block;
+}
+.btn{
+    width: 10px;
+    background-color: white;
+    color: black;
+    padding: 0.3em;
+    text-decoration: none;
+    border-radius: 0.3em;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-Registro, .btn-Inicio{
+    background-color: skyblue;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 1em;
+}
+.btn-Inicio{
+    display: none;
+}
+.btn-Registro{
+    display: none;
+}
+.btn-Registro:hover, .btn-Inicio:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#user{
+    display: none;
+    color: white;
+}
+#cerrarSesion{
+    display: none;
+}
